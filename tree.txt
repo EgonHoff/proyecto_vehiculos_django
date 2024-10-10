@@ -1,0 +1,16 @@
+## Proyecto estado inicial
+
+Listado de rutas de carpetas
+El n�mero de serie del volumen es 000000F7 1842:BE5D
+D:\M6-DJANGO\PROYECTO_VEHICULOS_DJANGO\PROYECTO_VEHICULOS_DJANGO
+|   manage.py
+|   
+\---config
+        asgi.py
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+
+## Proyecto estado final
+        

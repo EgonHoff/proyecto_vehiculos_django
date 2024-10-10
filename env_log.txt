@@ -1,0 +1,214 @@
+# creacion de entorno virutal
+
+>>mkvirtualenv proyecto_vehiculos_django
+
+created virtual environment CPython3.12.4.final.0-64 in 451ms
+  creator CPython3Windows(dest=C:\Users\Egon Hoffmann\Envs\proyecto_vehiculos_django, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Egon Hoffmann\AppData\Local\pypa\virtualenv)        
+    added seed packages: pip==24.2
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+>>workon proyecto_vehiculos_django
+
+# instalando dependencias
+
+>>pip install django==5.1.1
+
+Collecting Django==5.1.1
+  Using cached Django-5.1.1-py3-none-any.whl.metadata (4.2 kB)
+Collecting asgiref<4,>=3.8.1 (from Django==5.1.1)
+  Using cached asgiref-3.8.1-py3-none-any.whl.metadata (9.3 kB)
+Collecting sqlparse>=0.3.1 (from Django==5.1.1)
+  Using cached sqlparse-0.5.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting tzdata (from Django==5.1.1)
+  Downloading tzdata-2024.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached Django-5.1.1-py3-none-any.whl (8.2 MB)
+Using cached asgiref-3.8.1-py3-none-any.whl (23 kB)
+Using cached sqlparse-0.5.1-py3-none-any.whl (44 kB)
+Downloading tzdata-2024.2-py2.py3-none-any.whl (346 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, Django
+Successfully installed Django-5.1.1 asgiref-3.8.1 sqlparse-0.5.1 tzdata-2024.2
+
+>>pip install django-bootstrap5==24.3
+
+Collecting django-bootstrap5==24.3
+  Downloading django_bootstrap5-24.3-py3-none-any.whl.metadata (5.6 kB)
+Requirement already satisfied: Django>=4.2 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django-bootstrap5==24.3) (5.1.1)
+Requirement already satisfied: asgiref<4,>=3.8.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from Django>=4.2->django-bootstrap5==24.3) (3.8.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from Django>=4.2->django-bootstrap5==24.3) (0.5.1)
+Requirement already satisfied: tzdata in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from Django>=4.2->django-bootstrap5==24.3) (2024.2)
+Downloading django_bootstrap5-24.3-py3-none-any.whl (26 kB)
+Installing collected packages: django-bootstrap5
+Successfully installed django-bootstrap5-24.3
+
+>>pip install django-crispy-forms==2.3
+
+Collecting django-crispy-forms==2.3
+  Using cached django_crispy_forms-2.3-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: django>=4.2 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django-crispy-forms==2.3) (5.1.1)
+Requirement already satisfied: asgiref<4,>=3.8.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->django-crispy-forms==2.3) (3.8.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->django-crispy-forms==2.3) (0.5.1)
+Requirement already satisfied: tzdata in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->django-crispy-forms==2.3) (2024.2)
+Using cached django_crispy_forms-2.3-py3-none-any.whl (31 kB)
+Installing collected packages: django-crispy-forms
+Successfully installed django-crispy-forms-2.3
+
+>>pip install crispy-bootstrap5==2024.10
+
+Collecting crispy-bootstrap5==2024.10
+  Downloading crispy_bootstrap5-2024.10-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: django>=4.2 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from crispy-bootstrap5==2024.10) (5.1.1)
+Requirement already satisfied: django-crispy-forms>=2.3 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from crispy-bootstrap5==2024.10) (2.3)
+Requirement already satisfied: asgiref<4,>=3.8.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->crispy-bootstrap5==2024.10) (3.8.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->crispy-bootstrap5==2024.10) (0.5.1)
+Requirement already satisfied: tzdata in c:\users\egon hoffmann\envs\django-from-scratch\lib\site-packages (from django>=4.2->crispy-bootstrap5==2024.10) (2024.2)
+Downloading crispy_bootstrap5-2024.10-py3-none-any.whl (24 kB)
+Installing collected packages: crispy-bootstrap5
+Successfully installed crispy-bootstrap5-2024.10
+
+>>django-admin startproject proyecto_vehiculos_django
+
+>>tree /f /a "D:\M6-Django\proyecto_vehiculos_django\proyecto_vehiculos_django" > tree.txt
+
+>>cd proyecto_vehiculos_django
+
+>>py manage.py migrate
+
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+
+>>git init
+
+Initialized empty Git repository in D:/M6-Django/proyecto_vehiculos_django/proyecto_vehiculos_django/.git/
+
+>>git status
+
+On branch main
+
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+        config/
+        manage.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+>>git add .
+
+>>git commit -m "Estado Inicial Proyecto"
+
+[main (root-commit) 1f37e75] Estado Inicial del Proyecto
+ 8 files changed, 384 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 config/__init__.py
+ create mode 100644 config/asgi.py
+ create mode 100644 config/settings.py
+ create mode 100644 config/urls.py
+ create mode 100644 config/wsgi.py
+ create mode 100644 manage.py
+
+>> git remote add origin https://github.com/EgonHoff/proyecto_vehiculos_django.git
+
+>> git push -u origin main
+
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (18/18), 11.40 KiB | 2.28 MiB/s, done.
+Total 18 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/EgonHoff/Prueba-Django.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+>> git checkout -b develop
+
+Switched to a new branch 'develop'
+
+>> django-admin startapp vehiculo
+
+>> py manage.py makemigrations
+
+Migrations for 'vehiculo':
+  vehiculo\migrations\0001_initial.py
+    + Create model Vehiculo
+
+>> py manage.py migrate
+
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, vehiculo
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+  Applying vehiculo.0001_initial... OK
+
+>> git add .
+
+>> git commit -m "Creacion app y modelo vehiculo"
+
+[develop 7c9d9e1] Creacion app y modelo vehiculo
+ 11 files changed, 87 insertions(+), 5 deletions(-)
+ create mode 100644 vehiculo/__init__.py
+ create mode 100644 vehiculo/admin.py
+ create mode 100644 vehiculo/apps.py
+ create mode 100644 vehiculo/migrations/0001_initial.py
+ create mode 100644 vehiculo/migrations/__init__.py
+ create mode 100644 vehiculo/models.py
+ create mode 100644 vehiculo/tests.py
+ create mode 100644 vehiculo/views.py
+
+>> py manage.py createsuperuser
+
+Username (leave blank to use 'egonhoffmann'): admin
+Email address: admin@admin.com
+Password: 
+Password (again):
+The password is too similar to the username.
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
