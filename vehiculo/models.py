@@ -27,7 +27,8 @@ class Vehiculo(models.Model):
 
     class Meta:
         permissions = [
-            ("visualizar_catalogo", "Puede visualizar Catálogo de Vehículos")
+            ("visualizar_catalogo", "Puede visualizar Catálogo de Vehículos"),
+            ("can_add_vehiculo", "Puede agregar un vehículo"),
         ]
 
     def __str__(self):

@@ -9,12 +9,31 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href={% url "index" %}>Inicio</a>
           </li>
+          {% if user.is_authenticated and 'vehiculo.can_add_vehiculo' in perms %}
           <li class="nav-item">
             <a class="nav-link" href={% url "addV" %}>Agregar</a>
           </li>
+          {% endif %}
           <li class="nav-item">
             <a class="nav-link" href="#">Listar</a>
           </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <span class='nav-link'>Hola, {{user.username}}</span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'addU' %}">Registrate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Inicia Sesión</a>
+            </li>
+            {% endif %}
         </ul>
       </div>
     </div>
