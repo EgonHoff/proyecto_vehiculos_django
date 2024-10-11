@@ -212,3 +212,24 @@ This password is too common.
 Bypass password validation and create user anyway? [y/N]: y
 Superuser created successfully.
 
+>> git add .
+>> git commit -m "Creacion super usuario"
+
+[develop f2269b4] Creacion super usuario
+ 3 files changed, 258 insertions(+)
+ create mode 100644 env_log.txt
+ create mode 100644 requeriments.txt
+ create mode 100644 tree.txt
+
+>> git push
+
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 3.18 KiB | 3.18 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/EgonHoff/proyecto_vehiculos_django.git
+   7c9d9e1..f2269b4  develop -> develop
+
+>>py manage.py runserver
