@@ -14,3 +14,92 @@ D:\M6-DJANGO\PROYECTO_VEHICULOS_DJANGO\PROYECTO_VEHICULOS_DJANGO
 
 ## Proyecto estado final
         
+Listado de rutas de carpetas
+El n�mero de serie del volumen es 000000CF 1842:BE5D
+D:\M6-DJANGO\PROYECTO_VEHICULOS_DJANGO\PROYECTO_VEHICULOS_DJANGO
+|   .gitignore
+|   db.sqlite3
+|   env_log.txt
+|   manage.py
+|   README.md
+|   requeriments.txt
+|   tree.txt
+|   
++---config
+|   |   asgi.py
+|   |   settings.py
+|   |   urls.py
+|   |   wsgi.py
+|   |   __init__.py
+|   |   
+|   \---__pycache__
+|           settings.cpython-312.pyc
+|           urls.cpython-312.pyc
+|           wsgi.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|           
++---templates
+|       base.html
+|       index.html
+|       navbar.html
+|       
++---users
+|   |   admin.py
+|   |   apps.py
+|   |   models.py
+|   |   tests.py
+|   |   urls.py
+|   |   views.py
+|   |   __init__.py
+|   |   
+|   +---migrations
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           __init__.cpython-312.pyc
+|   |           
+|   +---templates
+|   |       login.html
+|   |       register.html
+|   |       
+|   \---__pycache__
+|           admin.cpython-312.pyc
+|           apps.cpython-312.pyc
+|           models.cpython-312.pyc
+|           urls.cpython-312.pyc
+|           views.cpython-312.pyc
+|           __init__.cpython-312.pyc
+|           
+\---vehiculo
+    |   admin.py
+    |   apps.py
+    |   forms.py
+    |   models.py
+    |   tests.py
+    |   urls.py
+    |   views.py
+    |   __init__.py
+    |   
+    +---migrations
+    |   |   0001_initial.py
+    |   |   0002_alter_vehiculo_options.py
+    |   |   __init__.py
+    |   |   
+    |   \---__pycache__
+    |           0001_initial.cpython-312.pyc
+    |           0002_alter_vehiculo_options.cpython-312.pyc
+    |           __init__.cpython-312.pyc
+    |           
+    +---templates
+    |       lista_vehiculo.html
+    |       vehiculo_form.html
+    |       
+    \---__pycache__
+            admin.cpython-312.pyc
+            apps.cpython-312.pyc
+            forms.cpython-312.pyc
+            models.cpython-312.pyc
+            urls.cpython-312.pyc
+            views.cpython-312.pyc
+            __init__.cpython-312.pyc
+            
